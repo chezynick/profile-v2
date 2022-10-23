@@ -1,8 +1,11 @@
 import React from "react";
 
-const About = () => {
+const About = ({ forwardRef }) => {
   return (
-    <div className="bg-gray-200 text-gray-700 h-screen w-full flex justify-center text-4xl items-center">
+    <div
+      ref={forwardRef}
+      className="bg-gray-200 text-gray-700 h-screen w-full flex flex-col justify-center text-4xl items-center"
+    >
       About things
     </div>
   );
