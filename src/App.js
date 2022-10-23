@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 import About from "./pages/About";
 import Personal from "./pages/Personal";
@@ -7,45 +7,46 @@ import Welcome from "./pages/Welcome";
 import Contact from "./pages/Contact";
 import Work from "./pages/Work";
 import MenuDots from "./components/MenuDots";
-import { WELCOME } from "./constants";
+import { ABOUT, CONTACT, WELCOME, WORK, PERSONAL } from "./constants";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(WELCOME);
   const aboutRef = useRef();
+  const midAboutRef = useRef();
   const workRef = useRef();
   const personalRef = useRef();
+  const midPersonalRef = useRef();
   const contactRef = useRef();
+  const midContactRef = useRef();
   const welcomeRef = useRef();
+  const midWorkRef = useRef();
 
   const scrollToComponent = (ref) =>
     window.scrollTo({
       behavior: "smooth",
       top: ref.current.offsetTop,
     });
-  console.log(currentPage);
+  const refPoints = [
+    { name: WELCOME, mainRef: welcomeRef, midPoint: welcomeRef },
+    { name: WORK, mainRef: workRef, midPoint: midWorkRef },
+    { name: ABOUT, mainRef: aboutRef, midPoint: midAboutRef },
+    { name: PERSONAL, mainRef: personalRef, midPoint: midPersonalRef },
+    { name: CONTACT, mainRef: contactRef, midPoint: midContactRef },
+  ];
   return (
     <div className="App">
-      <MenuDots
-        workRef={workRef}
-        welcomeRef={welcomeRef}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        personalRef={personalRef}
-        contactRef={contactRef}
-        aboutRef={aboutRef}
-        scrollToComponent={scrollToComponent}
-      />
+      <MenuDots refPoints={refPoints} scrollToComponent={scrollToComponent} />
       <Welcome
         forwardRef={welcomeRef}
-        setCurrentPage={setCurrentPage}
         workRef={workRef}
         scrollToComponent={scrollToComponent}
       />
-      <Work forwardRef={workRef} />
-      <About forwardRef={aboutRef} />
-      <Personal forwardRef={personalRef} />
+      <div ref={workRef}>
+        <Work forwardRef={workRef} midRef={midWorkRef} />
+      </div>
+      <About forwardRef={aboutRef} midRef={midAboutRef} />
+      <Personal forwardRef={personalRef} midRef={midPersonalRef} />
 
-      <Contact forwardRef={contactRef} />
+      <Contact forwardRef={contactRef} midRef={midContactRef} />
     </div>
   );
 }

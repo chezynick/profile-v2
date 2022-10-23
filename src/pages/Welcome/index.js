@@ -1,13 +1,7 @@
 import React from "react";
 import Button from "../../components/Button";
-import { WORK } from "../../constants";
 
-const Welcome = ({
-  scrollToComponent,
-  forwardRef,
-  workRef,
-  setCurrentPage,
-}) => {
+const Welcome = ({ scrollToComponent, forwardRef, workRef }) => {
   return (
     <div
       ref={forwardRef}
@@ -16,7 +10,6 @@ const Welcome = ({
       <p>Hello world</p>
       <Button
         onClick={() => {
-          setCurrentPage(WORK);
           scrollToComponent(workRef);
         }}
         text="My work"
