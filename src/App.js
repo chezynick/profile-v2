@@ -40,9 +40,7 @@ function App() {
         workRef={workRef}
         scrollToComponent={scrollToComponent}
       />
-      <div ref={workRef}>
-        <Work forwardRef={workRef} midRef={midWorkRef} />
-      </div>
+      <Work forwardRef={workRef} midRef={midWorkRef} />
       <About forwardRef={aboutRef} midRef={midAboutRef} />
       <Personal forwardRef={personalRef} midRef={midPersonalRef} />
 
