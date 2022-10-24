@@ -4,9 +4,10 @@ const About = ({ forwardRef, midRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="bg-gray-100 text-gray-700 h-screen w-full flex flex-col justify-center text-4xl items-center"
+      className="bg-gray-100 relative text-gray-700 h-screen w-full flex flex-col justify-center text-4xl items-center"
     >
-      <div ref={midRef}>About things</div>
+      <div>About things</div>
+      <div ref={midRef} className="right-2 absolute top-1/2" />
     </div>
   );
 };
