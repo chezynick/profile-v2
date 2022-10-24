@@ -18,6 +18,7 @@ function App() {
   const contactRef = useRef();
   const midContactRef = useRef();
   const welcomeRef = useRef();
+  const midWelcomeRef = useRef();
   const midWorkRef = useRef();
 
   const scrollToComponent = (ref) =>
@@ -26,7 +27,7 @@ function App() {
       top: ref.current.offsetTop,
     });
   const refPoints = [
-    { name: WELCOME, mainRef: welcomeRef, midPoint: welcomeRef },
+    { name: WELCOME, mainRef: welcomeRef, midPoint: midWelcomeRef },
     { name: WORK, mainRef: workRef, midPoint: midWorkRef },
     { name: ABOUT, mainRef: aboutRef, midPoint: midAboutRef },
     { name: PERSONAL, mainRef: personalRef, midPoint: midPersonalRef },
@@ -34,12 +35,13 @@ function App() {
   ];
   return (
     <div className="App">
-      <MenuDots refPoints={refPoints} scrollToComponent={scrollToComponent} />
       <Welcome
         forwardRef={welcomeRef}
         workRef={workRef}
+        midRef={midWelcomeRef}
         scrollToComponent={scrollToComponent}
       />
+      <MenuDots refPoints={refPoints} scrollToComponent={scrollToComponent} />
       <Work forwardRef={workRef} midRef={midWorkRef} />
       <About forwardRef={aboutRef} midRef={midAboutRef} />
       <Personal forwardRef={personalRef} midRef={midPersonalRef} />
