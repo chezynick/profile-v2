@@ -16,24 +16,24 @@ const About = ({ forwardRef, midRef }) => {
       </div>
       <div className="sm:text-lg text-sm space-y-2  sm:space-y-6 w-[80%] h-[70%] sm:h-auto text-left">
         <div>
-          I am currently a front end developer with Bright HR, helping to
+          Presently working at Bright HR as a front end developer, helping to
           develop their cutting edge human resource software. Since beginning my
           journey with Bright in January 2021 I have been part of a small team
           working on a number of exciting projects.
         </div>
         <HorizontalDivide />
         <div>
-          Our current project was to develop a free version of our rota planning
-          software to be used by other companies with the aim of upselling those
-          companies to our main premium product. At the heart of this offering
-          was our latest rota planner, which I was not only the sole front end
-          developer but also created and designed it from scratch.
+          A major project was to develop a free version of our rota planning
+          software to be used by other companies with the aim of upselling to
+          them our main premium product. At the heart of this offering was our
+          latest rota planner, I am proud that I was the sole front end
+          developer, and that I created and designed it from scratch.
         </div>
         <HorizontalDivide />
         <div>
-          The free project &apos;Bright lite&apos; also uses the companies new
-          navigation system which was released at the end of last year, I was
-          also the sole front end developer on that project.
+          I was also developed the free project &apos;Bright HR lite&apos; which
+          was released at the end of 2021 and uses the company&apos;s new
+          navigation system which I was worked soley on.
         </div>
         <HorizontalDivide />
         <div>
