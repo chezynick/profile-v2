@@ -28,8 +28,8 @@ function App() {
     });
   const refPoints = [
     { name: WELCOME, mainRef: welcomeRef, midPoint: midWelcomeRef },
-    { name: WORK, mainRef: workRef, midPoint: midWorkRef },
     { name: ABOUT, mainRef: aboutRef, midPoint: midAboutRef },
+    { name: WORK, mainRef: workRef, midPoint: midWorkRef },
     { name: PERSONAL, mainRef: personalRef, midPoint: midPersonalRef },
     { name: CONTACT, mainRef: contactRef, midPoint: midContactRef },
   ];
@@ -37,15 +37,14 @@ function App() {
     <div className="App">
       <Welcome
         forwardRef={welcomeRef}
-        workRef={workRef}
+        aboutRef={aboutRef}
         midRef={midWelcomeRef}
         scrollToComponent={scrollToComponent}
       />
       <MenuDots refPoints={refPoints} scrollToComponent={scrollToComponent} />
-      <Work forwardRef={workRef} midRef={midWorkRef} />
       <About forwardRef={aboutRef} midRef={midAboutRef} />
+      <Work forwardRef={workRef} midRef={midWorkRef} />
       <Personal forwardRef={personalRef} midRef={midPersonalRef} />
-
       <Contact forwardRef={contactRef} midRef={midContactRef} />
     </div>
   );

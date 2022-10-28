@@ -1,21 +1,21 @@
 import React from "react";
 import Button from "../../components/Button";
 
-const Welcome = ({ scrollToComponent, forwardRef, workRef, midRef }) => {
+const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="bg-gray-800 p-4 relative text-white h-screen w-full flex flex-col justify-center text-4xl items-center"
+      className="bg-gray-800 p-4 relative text-white h-screen w-full flex flex-col text-2xl justify-center md:text-4xl items-center"
     >
-      <p>
-        Hello, My name is{" "}
+      <p className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 mb-2">
+        <span>Hello, My name is </span>
         <span className="text-primaryColor">Nick Chesterton</span>
       </p>
       <Button
         onClick={() => {
-          scrollToComponent(workRef);
+          scrollToComponent(aboutRef);
         }}
-        text="View my work..."
+        text="About me..."
       />
       <div ref={midRef} className="right-2 absolute top-1/2" />
     </div>
