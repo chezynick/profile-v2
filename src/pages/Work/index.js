@@ -2,37 +2,31 @@ import React from "react";
 import cn from "classnames";
 
 const Work = ({ forwardRef, midRef }) => {
-  const projects = [
-    "bg-gray-400",
-    "bg-blue-300",
-    "bg-green-200",
-    "bg-yellow-300",
-    "bg-red-300",
-    "bg-lemon-300",
-    "bg-blue-600",
-    "bg-green-800",
-  ];
+  const projects = ["bg-gray-400", "bg-blue-300", "bg-green-200"];
   return (
     <div
       ref={forwardRef}
-      className="bg-gray-100 relative text-gray-700 h-screen w-full flex flex-col justify-center text-4xl items-center"
+      className="relative flex flex-col items-center justify-center w-full h-screen text-4xl text-gray-700 bg-gray-100"
     >
-      <div className="w-[80%] flex justify-start">
-        <h1 className="text-gray-700 text-2xl mb-2">Projects</h1>
+      <div className="w-[85%] flex justify-center">
+        <h1 className="mb-2 text-2xl text-gray-700">Projects</h1>
       </div>
 
-      <div className="w-[80%] h-3/4 overflow-clip flex items-center justify-start flex-wrap ">
+      <div className="w-[85%] h-3/4 gap-8 overflow-y-auto flex items-center justify-center flex-wrap ">
         {projects.map((project) => (
           <div
             key={project}
             className={cn(
-              "min-w-[200px] h-[200px] flex-shrink-0 flex-grow",
+              "md:w-[20rem] w-[250px] md:h-[20rem] h-[250px] flex-shrink-0 flex justify-center items-center  relative ",
               project
             )}
-          />
+          >
+            <div>images could go here</div>
+            <div className="absolute top-0 w-full h-full opacity-0 hover:opacity-80 hover:bg-white" />
+          </div>
         ))}
       </div>
-      <div ref={midRef} className="right-2 absolute top-1/2" />
+      <div ref={midRef} className="absolute right-2 top-1/2" />
     </div>
   );
 };
