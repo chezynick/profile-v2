@@ -45,7 +45,12 @@ function App() {
       <About forwardRef={aboutRef} midRef={midAboutRef} />
       <Work forwardRef={workRef} midRef={midWorkRef} />
       <Personal forwardRef={personalRef} midRef={midPersonalRef} />
-      <Contact forwardRef={contactRef} midRef={midContactRef} />
+      <Contact
+        forwardRef={contactRef}
+        midRef={midContactRef}
+        scrollToComponent={scrollToComponent}
+        topRef={welcomeRef}
+      />
     </div>
   );
 }

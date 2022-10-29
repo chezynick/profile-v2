@@ -1,12 +1,18 @@
 import React from "react";
-const Contact = ({ forwardRef, midRef }) => {
+import Button from "../../components/Button";
+const Contact = ({ forwardRef, midRef, scrollToComponent, topRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="bg-gray-100 relative text-gray-700 h-screen w-full flex justify-center text-4xl items-center"
+      className="relative flex flex-col items-center justify-center w-full h-screen text-4xl text-gray-700 bg-gray-100"
     >
       <div>Contact me?</div>
-      <div ref={midRef} className="right-2 absolute top-1/2" />
+      <Button
+        onClick={() => scrollToComponent(topRef)}
+        text="Back to top"
+        alternate
+      />
+      <div ref={midRef} className="absolute left-0 top-1/2" />
     </div>
   );
 };
