@@ -1,13 +1,14 @@
 import React from "react";
+import PageHeader from "../../components/PageHeader";
 
 const Personal = ({ forwardRef, midRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="bg-white relative text-gray-700 h-screen w-full flex justify-center text-4xl items-center"
+      className="relative flex items-center justify-center w-full h-screen text-4xl text-gray-700 bg-white"
     >
-      <div>Personal stuff</div>
-      <div ref={midRef} className="right-2 absolute top-1/2" />
+      <PageHeader text="Outside work" />
+      <div ref={midRef} className="absolute right-2 top-1/2" />
     </div>
   );
 };

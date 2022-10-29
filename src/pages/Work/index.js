@@ -3,6 +3,7 @@ import LinkButton from "../../components/LinkButton";
 import brightLiteImage from "../../images/brightLite.png";
 import foodieFileImage from "../../images/foodieFile.png";
 import carcascoreImage from "../../images/carcascoreImage.png";
+import PageHeader from "../../components/PageHeader";
 
 const Work = ({ forwardRef, midRef }) => {
   const projects = [
@@ -34,24 +35,22 @@ const Work = ({ forwardRef, midRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="relative flex flex-col items-center justify-center w-full h-screen text-4xl text-gray-700 bg-gray-100"
+      className="relative flex flex-col items-center justify-center w-full min-h-screen py-8 text-4xl text-gray-700 bg-gray-100"
     >
-      <div className="w-[85%] flex justify-center">
-        <h1 className="mb-2 text-2xl text-gray-700">Projects</h1>
-      </div>
+      <PageHeader text="Projects" />
 
-      <div className="w-[85%] h-auto mb-8 md:gap-8 gap-1 overflow-y-auto flex items-center justify-center flex-wrap ">
+      <div className="w-[85%] mb-8 mt-10 xl:mt-0 md:gap-8 gap-4 sm:pl-0 pl-4  flex items-center justify-center flex-wrap sm:flex-row flex-col">
         {projects.map((project) => (
           <div
             key={project.url}
-            className="md:w-[18rem] w-[10rem] md:h-[18rem] h-[10rem] flex-shrink-0 flex justify-center items-center  relative "
+            className="w-[18rem] h-[18rem]  flex-shrink-0 flex justify-center items-center  relative "
           >
             <img
               src={project.imgLink}
               alt={project.alt}
               className="w-full h-full overflow-hidden flex-shrink-none"
             />
-            <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full py-10 font-bold opacity-0 hover:opacity-80 hover:bg-white">
+            <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full py-10 font-bold opacity-0 hover:opacity-90 hover:bg-white">
               <div>{project.title}</div>
               <div className="w-full px-4 my-4 text-base font-bold">
                 {project.description}

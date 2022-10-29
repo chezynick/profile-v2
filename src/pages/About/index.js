@@ -1,5 +1,6 @@
 import React from "react";
 import ListItem from "../../components/ListItem";
+import PageHeader from "../../components/PageHeader";
 
 const About = ({ forwardRef, midRef }) => {
   const HorizontalDivide = () => (
@@ -11,13 +12,12 @@ const About = ({ forwardRef, midRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="relative flex flex-col justify-center w-full h-screen pl-12 text-4xl text-gray-700 bg-white overflow-y-clip"
+      className="relative flex flex-col justify-center w-full min-h-screen py-4 pl-6 text-4xl text-gray-700 bg-white md:pl-12 overflow-y-clip"
     >
-      <h1 className="w-full pl-4 mb-2 text-xl text-left text-gray-700 sm:text-2xl">
-        About me
-      </h1>
-      <div className="flex flex-row w-full md:mb-10 ">
-        <div className="w-1/2 p-4 ">
+      <PageHeader text="Experience" />
+
+      <div className="flex flex-col w-full mt-10 md:mt-0 sm:flex-row md:mb-10 ">
+        <div className="p-4 sm:w-1/2 ">
           <div className="flex justify-start "></div>
           <div className="space-y-1 text-sm text-left sm:text-lg sm:space-y-6">
             <div>
@@ -40,7 +40,7 @@ const About = ({ forwardRef, midRef }) => {
           </div>
         </div>
         <div ref={midRef} className="absolute right-0 top-1/2" />
-        <div className="w-1/2 px-8 py-4 space-y-1 text-sm text-left sm:text-lg sm:space-y-6">
+        <div className="px-8 py-4 space-y-1 text-sm text-left sm:w-1/2 sm:text-lg sm:space-y-6">
           <div>
             Below are 3 of the major projects I have been involved in, I was the
             sole front end developer, involved in planning and decision making
