@@ -4,6 +4,7 @@ import brightLiteImage from "../../images/brightLite.png";
 import foodieFileImage from "../../images/foodieFile.png";
 import carcascoreImage from "../../images/carcascoreImage.png";
 import PageHeader from "../../components/PageHeader";
+import cn from "classnames";
 
 const Work = ({ forwardRef, midRef }) => {
   const projects = [
@@ -48,7 +49,12 @@ const Work = ({ forwardRef, midRef }) => {
             <img
               src={project.imgLink}
               alt={project.alt}
-              className="w-full h-full overflow-hidden flex-shrink-none"
+              className={cn(
+                "object-cover w-full h-full overflow-hidden flex-shrink-none",
+                {
+                  "object-left": project.title === projects[0].title,
+                }
+              )}
             />
             <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full py-10 font-bold opacity-0 hover:opacity-90 hover:bg-white">
               <div>{project.title}</div>
