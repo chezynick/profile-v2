@@ -1,38 +1,10 @@
 import React from "react";
 import LinkButton from "../../components/LinkButton";
-import brightLiteImage from "../../images/brightLite.png";
-import foodieFileImage from "../../images/foodieFile.png";
-import carcascoreImage from "../../images/carcascoreImage.png";
+import projects from "../../data/projects";
 import PageHeader from "../../components/PageHeader";
 import cn from "classnames";
 
 const Work = ({ forwardRef, midRef }) => {
-  const projects = [
-    {
-      imgLink: brightLiteImage,
-      url: "https://app.brighthr.com/lite",
-      alt: "BrightHR Lite image",
-      title: "BrightHR Lite",
-      description: "Work project which showcases my last 3 projects",
-    },
-    {
-      imgLink: foodieFileImage,
-      url: "https://chezynick.github.io/recipe2",
-      alt: "FoodieFile main page",
-      title: "FoodieFile",
-      description: "Recipe storage app - React - Firebase - Styled components ",
-    },
-    {
-      imgLink: carcascoreImage,
-      url: "https://chezynick.github.io/Carcascore/",
-      alt: "BrightHR Lite image",
-      title: "Carcascore",
-      description:
-        "Score board for Carcasonne game - React - Firebase - Tailwind",
-    },
-    // "bg-blue-300",
-    // "bg-green-200",
-  ];
   return (
     <div
       ref={forwardRef}
@@ -44,7 +16,7 @@ const Work = ({ forwardRef, midRef }) => {
         {projects.map((project) => (
           <div
             key={project.url}
-            className="w-[18rem] h-[18rem]  flex-shrink-0 flex justify-center items-center  relative "
+            className="sm:w-[24rem] sm:h-[24rem] h-[20rem] w-[20rem]  flex-shrink-0 flex justify-center items-center  relative "
           >
             <img
               src={project.imgLink}
