@@ -34,7 +34,7 @@ function App() {
     { name: CONTACT, mainRef: contactRef, midPoint: midContactRef },
   ];
   return (
-    <div className="App">
+    <div className="text-base text-gray-800  md:text-lg">
       <Welcome
         forwardRef={welcomeRef}
         aboutRef={aboutRef}

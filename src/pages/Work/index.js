@@ -12,11 +12,11 @@ const Work = ({ forwardRef, midRef }) => {
     >
       <PageHeader text="Projects" />
 
-      <div className="w-[85%] mb-8 mt-10 xl:mt-0 md:gap-8 gap-4 sm:pl-0 pl-4  flex items-center justify-center flex-wrap sm:flex-row flex-col">
+      <div className="grid w-full grid-cols-1 gap-4 px-12 mt-10 mb-8 md:w-3/4 md:px-0 xl:mt-0 md:gap-8 md:grid-cols-3 sm:grid-cols-2 ">
         {projects.map((project) => (
           <div
             key={project.url}
-            className="sm:w-[24rem] sm:h-[24rem] h-[20rem] w-[20rem]  flex-shrink-0 flex justify-center items-center  relative "
+            className="relative flex items-center justify-center flex-shrink-0 "
           >
             <img
               src={project.imgLink}
@@ -39,8 +39,8 @@ const Work = ({ forwardRef, midRef }) => {
         ))}
       </div>
       <div className="flex justify-center w-full text-sm md:text-lg">
-        <div className="w-1/2 ">
-          <span className="hidden md:flex">
+        <div className="px-12 md:w-1/2 md:px-0">
+          <span>
             These are just a couple of personal projects along with a work
             project that showcases my most recent work, for more examples click
             to see my{" "}

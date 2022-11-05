@@ -13,7 +13,7 @@ const Contact = ({ forwardRef, midRef, scrollToComponent, topRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="relative z-0 flex flex-col items-center justify-center w-full h-screen text-4xl text-gray-100 bg-gray-800"
+      className="relative z-0 flex flex-col items-center justify-center w-full h-screen text-gray-100 bg-gray-800"
     >
       <PageHeader text="Contact" light />
       <Button onClick={() => scrollToComponent(topRef)} text="Back to top" />

@@ -5,11 +5,11 @@ const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="bg-gray-800 p-4 relative text-white h-screen w-full flex flex-col justify-center text-4xl items-center"
+      className="relative flex flex-col items-center justify-center w-full h-screen p-4 text-white bg-gray-800"
     >
-      <p className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 mb-2">
+      <p className="flex flex-col mb-2 space-y-6 text-xl sm:text-4xl sm:flex-row sm:space-y-0">
         <span>Hello, My name is </span>
-        <span className="text-primaryColor pl-2"> Nick Chesterton</span>
+        <span className="pl-2 text-primaryColor"> Nick Chesterton</span>
       </p>
       <Button
         onClick={() => {
@@ -17,7 +17,7 @@ const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
         }}
         text="About me..."
       />
-      <div ref={midRef} className="right-2 absolute top-1/2" />
+      <div ref={midRef} className="absolute right-2 top-1/2" />
     </div>
   );
 };

@@ -5,21 +5,21 @@ import PageHeader from "../../components/PageHeader";
 const About = ({ forwardRef, midRef }) => {
   const HorizontalDivide = () => (
     <div className="justify-center hidden w-full lg:flex">
-      <div className="w-[80%] h-[1px] bg-primaryColor" />
+      <div className="md:w-3/4 w-full px-10 md:px-0 h-[1px] bg-primaryColor" />
     </div>
   );
 
   return (
     <div
       ref={forwardRef}
-      className="relative flex flex-col justify-center w-full min-h-screen py-4 pl-6 text-4xl text-gray-700 bg-white md:pl-12 overflow-y-clip"
+      className="relative flex flex-col items-center justify-center w-full min-h-screen py-4 bg-white overflow-y-clip"
     >
       <PageHeader text="Experience" />
 
-      <div className="flex flex-col w-full mt-10 md:mt-0 sm:flex-row md:mb-10 ">
-        <div className="p-4 sm:w-1/2 ">
+      <div className="flex flex-col w-full gap-16 px-12 mt-10 md:px-0 md:w-3/4 md:mt-0 sm:flex-row md:mb-10 ">
+        <div className=" sm:w-1/2">
           <div className="flex justify-start "></div>
-          <div className="space-y-1 text-sm text-left sm:text-lg sm:space-y-6">
+          <div className="space-y-1 text-left sm:space-y-6">
             <div>
               Presently working at Bright HR as a front end developer, helping
               to develop their cutting edge human resource software. Since
@@ -40,7 +40,7 @@ const About = ({ forwardRef, midRef }) => {
           </div>
         </div>
         <div ref={midRef} className="absolute right-0 top-1/2" />
-        <div className="px-8 py-4 space-y-1 text-sm text-left sm:w-1/2 sm:text-lg sm:space-y-6">
+        <div className="space-y-1 text-left sm:w-1/2 sm:space-y-6">
           <div>
             Below are 3 of the major projects I have been involved in, I was the
             sole front end developer, involved in planning and decision making
