@@ -31,7 +31,7 @@ const hobbies = [
       "Before and during my time with STA I am lucky enough to have visited over 40 countries, I like to travel overland as much as possible preferably by bike surprisingly but have also spent 4 months in Australia as well as over 6 months exploring Asia.",
   },
   {
-    name: "Food!",
+    name: "Food",
     IconName: () => (
       <FontAwesomeIcon
         size="lg"

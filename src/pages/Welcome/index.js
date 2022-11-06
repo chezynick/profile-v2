@@ -7,7 +7,7 @@ const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
       ref={forwardRef}
       className="relative flex flex-col items-center justify-center w-full h-screen p-4 text-white bg-gray-800"
     >
-      <p className="flex flex-col mb-2 space-y-6 text-xl sm:text-4xl sm:flex-row sm:space-y-0">
+      <p className="flex flex-col mb-2 space-y-6 text-4xl sm:flex-row sm:space-y-0">
         <span>Hello, My name is </span>
         <span className="pl-2 text-primaryColor"> Nick Chesterton</span>
       </p>

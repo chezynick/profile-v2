@@ -12,7 +12,7 @@ const Personal = ({ forwardRef, midRef }) => {
       <div ref={midRef} className="absolute right-2 top-1/2" />
       <div className="w-full px-12 mt-20 mb-6 md:w-3/4 md:px-0 md:mt-0">
         Prior to teaching myself to code during lockdown I worked in sales for
-        STA Travel for 12 years for prior to that a retail manager. ALot of the
+        STA Travel for 12 years for prior to that a retail manager. Alot of the
         skills learnt during this time have been essential throughout the last
         years, from teamwork to communication.
       </div>

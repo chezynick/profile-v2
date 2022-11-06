@@ -8,7 +8,7 @@ const Work = ({ forwardRef, midRef }) => {
   return (
     <div
       ref={forwardRef}
-      className="relative flex flex-col items-center justify-center w-full min-h-screen py-8 text-4xl text-gray-700 bg-gray-100"
+      className="relative flex flex-col items-center justify-center w-full min-h-screen py-8 text-gray-700 bg-gray-100"
     >
       <PageHeader text="Projects" />
 
@@ -28,9 +28,9 @@ const Work = ({ forwardRef, midRef }) => {
                 }
               )}
             />
-            <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full py-10 font-bold opacity-0 hover:opacity-90 hover:bg-white">
-              <div>{project.title}</div>
-              <div className="w-full px-4 my-4 text-base font-bold">
+            <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full font-bold opacity-0 sm:py-10 hover:opacity-90 hover:bg-white">
+              <div className="sm:text-3xl">{project.title}</div>
+              <div className="w-full px-4 my-4 text-sm font-bold sm:px-8 sm:text-base">
                 {project.description}
               </div>
               <LinkButton text="Go to project" href={project.url} />

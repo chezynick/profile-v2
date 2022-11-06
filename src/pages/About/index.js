@@ -16,7 +16,7 @@ const About = ({ forwardRef, midRef }) => {
     >
       <PageHeader text="Experience" />
 
-      <div className="flex flex-col w-full gap-16 px-12 mt-10 md:px-0 md:w-3/4 md:mt-0 sm:flex-row md:mb-10 ">
+      <div className="flex flex-col w-full gap-16 px-12 mt-10 md:px-0 md:w-3/4 lg:mt-0 sm:flex-row md:mb-10 ">
         <div className=" sm:w-1/2">
           <div className="flex justify-start "></div>
           <div className="space-y-1 text-left sm:space-y-6">
