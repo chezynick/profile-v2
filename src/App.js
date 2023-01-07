@@ -46,10 +46,20 @@ function App() {
         forwardRef={aboutRef}
         midRef={midAboutRef}
         scrollToComponent={scrollToComponent}
-        workRef={workRef}
+        nextRef={workRef}
       />
-      <Work forwardRef={workRef} midRef={midWorkRef} />
-      <Personal forwardRef={personalRef} midRef={midPersonalRef} />
+      <Work
+        forwardRef={workRef}
+        midRef={midWorkRef}
+        scrollToComponent={scrollToComponent}
+        nextRef={personalRef}
+      />
+      <Personal
+        forwardRef={personalRef}
+        midRef={midPersonalRef}
+        scrollToComponent={scrollToComponent}
+        nextRef={contactRef}
+      />
       <Contact
         forwardRef={contactRef}
         midRef={midContactRef}

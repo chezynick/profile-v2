@@ -1,17 +1,9 @@
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ListItem from "../../components/ListItem";
+import NextPageArrow from "../../components/NextPageArrow";
 import PageHeader from "../../components/PageHeader";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const About = ({ forwardRef, midRef, scrollToComponent, workRef }) => {
-  const [showArrow, setShowArrow] = useState(false);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowArrow(true);
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, []);
+const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
   const HorizontalDivide = () => (
     <div className="justify-center hidden w-full lg:flex">
       <div className="md:w-3/4 w-full px-10 md:px-0 h-[1px] bg-primaryColor" />
@@ -76,20 +68,7 @@ const About = ({ forwardRef, midRef, scrollToComponent, workRef }) => {
       </div>
 
       <HorizontalDivide />
-      {showArrow && (
-        <button
-          onClick={() => {
-            scrollToComponent(workRef);
-          }}
-          className="absolute bottom-10 left-1/2"
-        >
-          <FontAwesomeIcon
-            size="2x"
-            icon={faArrowDown}
-            className=" fill-primaryColor text-primaryColor opacity-20 animate-pulse"
-          />
-        </button>
-      )}
+      <NextPageArrow nextRef={nextRef} scrollToComponent={scrollToComponent} />
     </div>
   );
 };

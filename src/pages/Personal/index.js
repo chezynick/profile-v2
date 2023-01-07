@@ -1,8 +1,9 @@
 import React from "react";
+import NextPageArrow from "../../components/NextPageArrow";
 import PageHeader from "../../components/PageHeader";
 import hobbies from "../../data/Hobbies";
 
-const Personal = ({ forwardRef, midRef }) => {
+const Personal = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
   return (
     <div
       ref={forwardRef}
@@ -30,6 +31,7 @@ const Personal = ({ forwardRef, midRef }) => {
           </div>
         ))}
       </div>
+      <NextPageArrow nextRef={nextRef} scrollToComponent={scrollToComponent} />
     </div>
   );
 };

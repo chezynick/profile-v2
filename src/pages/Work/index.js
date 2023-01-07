@@ -3,8 +3,9 @@ import LinkButton from "../../components/LinkButton";
 import projects from "../../data/projects";
 import PageHeader from "../../components/PageHeader";
 import cn from "classnames";
+import NextPageArrow from "../../components/NextPageArrow";
 
-const Work = ({ forwardRef, midRef }) => {
+const Work = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
   return (
     <div
       ref={forwardRef}
@@ -58,6 +59,7 @@ const Work = ({ forwardRef, midRef }) => {
         </div>
       </div>
       <div ref={midRef} className="absolute right-2 top-1/2" />
+      <NextPageArrow nextRef={nextRef} scrollToComponent={scrollToComponent} />
     </div>
   );
 };
