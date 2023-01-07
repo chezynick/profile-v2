@@ -34,7 +34,7 @@ function App() {
     { name: CONTACT, mainRef: contactRef, midPoint: midContactRef },
   ];
   return (
-    <div className="text-base text-gray-800  md:text-lg">
+    <div className="text-base text-gray-800 md:text-lg">
       <Welcome
         forwardRef={welcomeRef}
         aboutRef={aboutRef}
@@ -42,7 +42,12 @@ function App() {
         scrollToComponent={scrollToComponent}
       />
       <MenuDots refPoints={refPoints} scrollToComponent={scrollToComponent} />
-      <About forwardRef={aboutRef} midRef={midAboutRef} />
+      <About
+        forwardRef={aboutRef}
+        midRef={midAboutRef}
+        scrollToComponent={scrollToComponent}
+        workRef={workRef}
+      />
       <Work forwardRef={workRef} midRef={midWorkRef} />
       <Personal forwardRef={personalRef} midRef={midPersonalRef} />
       <Contact

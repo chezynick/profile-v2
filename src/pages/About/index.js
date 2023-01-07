@@ -1,8 +1,17 @@
-import React from "react";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useState } from "react";
 import ListItem from "../../components/ListItem";
 import PageHeader from "../../components/PageHeader";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const About = ({ forwardRef, midRef }) => {
+const About = ({ forwardRef, midRef, scrollToComponent, workRef }) => {
+  const [showArrow, setShowArrow] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowArrow(true);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
   const HorizontalDivide = () => (
     <div className="justify-center hidden w-full lg:flex">
       <div className="md:w-3/4 w-full px-10 md:px-0 h-[1px] bg-primaryColor" />
@@ -30,7 +39,7 @@ const About = ({ forwardRef, midRef }) => {
             <div>
               As a developer I am self taught, learning to code during lock down
               using the Odin project an online course which you can complete in
-              your own time. This took alot of self disicpline and
+              your own time. This took alot of self discipline and
               determination. Before that I worked in sales and retail, I have
               found alot of the skills learnt have been useful during my time
               with Bright, ability to communicate well and being a good team
@@ -53,9 +62,10 @@ const About = ({ forwardRef, midRef }) => {
               option this has now superseded the original."
             />
             <ListItem
-              text="I concieved and built an alternative rota planner as a prototype for an idea I had,
-             after demoing to stakeholders it was allotted time to be be fully develeoped. It is now the primary view used by over 70%
-               of our customers and is the sole focus of future development. "
+              text="I conceived and built an alternative rota planner as a prototype for an idea I had,
+               after demoing to stakeholders it was allotted time to be be fully developed. It is now the
+                primary view used by over 70% of our customers and is the sole focus of future development.
+ "
             />
             <ListItem
               text="BrightHR Lite is a free to use rota planner, it is built to showcase
@@ -66,6 +76,20 @@ const About = ({ forwardRef, midRef }) => {
       </div>
 
       <HorizontalDivide />
+      {showArrow && (
+        <button
+          onClick={() => {
+            scrollToComponent(workRef);
+          }}
+          className="absolute bottom-10 left-1/2"
+        >
+          <FontAwesomeIcon
+            size="2x"
+            icon={faArrowDown}
+            className=" fill-primaryColor text-primaryColor opacity-20 animate-pulse"
+          />
+        </button>
+      )}
     </div>
   );
 };
