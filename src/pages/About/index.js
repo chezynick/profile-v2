@@ -50,12 +50,12 @@ const About = ({ forwardRef, midRef }) => {
           <ul>
             <ListItem
               text="New navigation system for Bright, originally released as a beta
-              option this has now replaced the original."
+              option this has now superseded the original."
             />
             <ListItem
               text="I concieved and built an alternative rota planner as a prototype for an idea I had,
              after demoing to stakeholders it was allotted time to be be fully develeoped. It is now the primary view used by over 70%
-               of our customers and is the sole focus of future deveopment and iteration. "
+               of our customers and is the sole focus of future development. "
             />
             <ListItem
               text="BrightHR Lite is a free to use rota planner, it is built to showcase

@@ -8,7 +8,7 @@ const Personal = ({ forwardRef, midRef }) => {
       ref={forwardRef}
       className="relative flex flex-col items-center justify-center w-full min-h-screen bg-white"
     >
-      <PageHeader text="Outside work" />
+      <PageHeader text="Also..." />
       <div ref={midRef} className="absolute right-2 top-1/2" />
       <div className="w-full px-12 mt-20 mb-6 md:w-3/4 md:px-0 md:mt-0">
         Prior to teaching myself to code during lockdown I worked in sales for

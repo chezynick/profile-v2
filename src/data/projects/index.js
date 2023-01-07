@@ -7,14 +7,15 @@ const projects = [
     url: "https://app.brighthr.com/lite",
     alt: "BrightHR Lite image",
     title: "BrightHR Lite",
-    description: "Work project which showcases my last 3 projects",
+    description:
+      "Work project which showcases my work over the previous year at Bright",
   },
   {
     imgLink: foodieFileImage,
     url: "https://chezynick.github.io/recipe2",
     alt: "FoodieFile main page",
     title: "FoodieFile",
-    description: "Recipe storage app - React - Firebase - Styled components ",
+    description: "Recipe storage app - React - Firebase - Styled components",
   },
   {
     imgLink: carcascoreImage,

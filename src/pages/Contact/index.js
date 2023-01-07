@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedinIn,
@@ -42,13 +42,13 @@ const Contact = ({ forwardRef, midRef, scrollToComponent, topRef }) => {
             className=" fill-white"
           />
         </a>
-        <a href="malito:nick.chesterton@yahoo.com" rel="noreferrer">
+        {/* <a href="malito:nick.chesterton@yahoo.com" rel="noreferrer">
           <FontAwesomeIcon
             size="3x"
             icon={faEnvelope}
             className=" fill-white"
           />
-        </a>
+        </a> */}
       </div>
       <div className="absolute bottom-0 flex justify-center w-full">
         <Button onClick={() => scrollToComponent(topRef)} text="Back to top" />
