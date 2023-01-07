@@ -21,14 +21,14 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
         <div className=" sm:w-1/2">
           <div className="flex justify-start "></div>
           <div className="space-y-1 text-left sm:space-y-6">
-            <div>
+            <p>
               Presently working at Bright HR as a front end developer, helping
               to develop their cutting edge human resource software. Since
               beginning my journey with Bright in January 2021 I have been part
               of a small team working on a number of exciting projects.
-            </div>
+            </p>
 
-            <div>
+            <p>
               As a developer I am self taught, learning to code during lock down
               using the Odin project an online course which you can complete in
               your own time. This took alot of self discipline and
@@ -37,16 +37,16 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
               with Bright, ability to communicate well and being a good team
               player I feel are some of the most important skills as a
               developer.
-            </div>
+            </p>
           </div>
         </div>
         <div ref={midRef} className="absolute right-0 top-1/2" />
         <div className="space-y-1 text-left sm:w-1/2 sm:space-y-6">
-          <div>
+          <p>
             Below are 3 of the major projects I have been involved in, I was the
             sole front end developer, involved in planning and decision making
             throughout.
-          </div>
+          </p>
 
           <ul>
             <ListItem
