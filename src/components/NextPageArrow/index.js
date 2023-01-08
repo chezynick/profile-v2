@@ -19,12 +19,12 @@ const NextPageArrow = ({ scrollToComponent, nextRef }) => {
       onClick={() => {
         scrollToComponent(nextRef);
       }}
-      className="absolute bottom-10 left-1/2"
+      className="absolute hidden lg:flex bottom-10 left-1/2"
     >
       <FontAwesomeIcon
         size="2x"
         icon={faArrowDown}
-        className=" fill-primaryColor text-primaryColor opacity-20 animate-pulse"
+        className=" fill-primaryColor text-primaryColor opacity-30 hover:opacity-60"
       />
     </button>
   );

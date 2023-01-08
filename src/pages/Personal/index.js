@@ -9,13 +9,19 @@ const Personal = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
       ref={forwardRef}
       className="relative flex flex-col items-center justify-center w-full min-h-screen bg-white"
     >
-      <PageHeader text="Also..." />
+      <PageHeader text="Looking forward & outside work" />
       <div ref={midRef} className="absolute right-2 top-1/2" />
-      <div className="w-full px-12 mt-20 mb-6 md:w-3/4 md:px-0 md:mt-0">
-        Prior to teaching myself to code during lockdown I worked in sales for
-        STA Travel for 12 years and prior to that as a retail manager. Alot of
-        the skills learnt during this time have been essential throughout the
-        last 2 years, from teamwork to communication.
+      <div className="w-full px-12 mt-20 mb-6 space-y-4 md:w-3/4 md:px-0 md:mt-0">
+        <p>
+          I am eager to progress in my new career and am continuously looking at
+          new ways to learn, improve and build on the knowledge I have acquired.
+          Currently I am teaching myself Flutter as a way of learning new skills
+          and experiencing a different coding language in Dart.
+        </p>
+        <p>
+          Outside of work I am active and always on the go, my main interests
+          are as follows:
+        </p>
       </div>
       <div className="grid w-full grid-cols-1 gap-6 px-12 mb-10 md:px-0 md:w-3/4 md:grid-cols-3 sm:grid-cols-2 md:flex-row">
         {hobbies.map((hobby) => (

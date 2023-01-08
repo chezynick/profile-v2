@@ -22,25 +22,24 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
           <div className="flex justify-start "></div>
           <div className="space-y-1 text-left sm:space-y-6">
             <p>
-              Presently working at Bright HR as a front end developer, helping
-              to develop their cutting edge human resource software. Since
-              beginning my journey with Bright in January 2021 I have been part
-              of a small team working on a number of exciting projects.
+              Presently, I am Front End Developer at Bright HR, a company
+              providing cutting edge human resource software. Since beginning my
+              journey with Bright in January 2021, I have been part of a small
+              team working on a number of exciting projects focusing on
+              enhancing the existing packages to stay ahead of the competition.
             </p>
 
             <p>
-              As a developer I am self taught, learning to code during lock down
-              using the Odin project an online course which you can complete in
-              your own time. This took alot of self discipline and
-              determination. Before that I worked in sales and retail, I have
-              found alot of the skills learnt have been useful during my time
-              with Bright, ability to communicate well and being a good team
-              player I feel are some of the most important skills as a
-              developer.
+              During lockdown I used the Odin project, an online course to learn
+              coding. This required alot of self discipline and determination.
+              Previously, I worked in sales and retail, the skills from this
+              background have been transferable to my new role, as I am a
+              excellent communicator and a good team player.
             </p>
           </div>
         </div>
         <div ref={midRef} className="absolute right-0 top-1/2" />
+
         <div className="space-y-1 text-left sm:w-1/2 sm:space-y-6">
           <p>
             Below are 3 of the major projects I have been involved in, I was the
