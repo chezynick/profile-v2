@@ -42,25 +42,26 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
 
         <div className="space-y-1 text-left sm:w-1/2 sm:space-y-6">
           <p>
-            Below are 3 of the major projects I have been involved in, I was the
+            Below are 3 of the major projects I have been involved in. I was the
             sole front end developer, involved in planning and decision making
             throughout.
           </p>
 
           <ul>
             <ListItem
-              text="New navigation system for Bright, originally released as a beta
-              option this has now superseded the original."
+              text="New navigation system, originally released as a beta
+             option, this has now superseded the original."
             />
             <ListItem
-              text="I conceived and built an alternative rota planner as a prototype for an idea I had,
-               after demoing to stakeholders it was allotted time to be be fully developed. It is now the
-                primary view used by over 70% of our customers and is the sole focus of future development.
- "
+              text="A new additional view for the existing rota planning software which I conceived and built as prototype,
+               was after demoing to stakeholders, allotted time to be be fully developed.
+                It is now the primary view used by over 70% of customers and is the sole
+                 focus of future development.
+"
             />
             <ListItem
-              text="BrightHR Lite is a free to use rota planner, it is built to showcase
-             the rota planner above and uses the navigation system I was also involved in. "
+              text="BrightHR Lite is a free to use rota planner, it is built
+             to showcase the rota planner above and uses the navigation system I was also involved in."
             />
           </ul>
         </div>

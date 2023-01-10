@@ -15,8 +15,9 @@ const Personal = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
         <p>
           I am eager to progress in my new career and am continuously looking at
           new ways to learn, improve and build on the knowledge I have acquired.
-          Currently I am teaching myself Flutter as a way of learning new skills
-          and experiencing a different coding language in Dart.
+          Currently, I am teaching myself Flutter as a way of learning new
+          skills and experiencing a different coding language in Dart. I have
+          also begun to use Typescript in a number of recent projects for work.
         </p>
         <p>
           Outside of work I am active and always on the go, my main interests

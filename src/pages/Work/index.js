@@ -40,13 +40,14 @@ const Work = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
         ))}
       </div>
       <div className="flex justify-center w-full text-sm md:text-lg">
-        <div className="px-12 md:w-1/2 md:px-0">
-          <span>
-            Above are 3 projects, the first is a demonstration of Bright lite
-            which was built to showcase the rota planner that I designed and
-            built. The others are both personal projects, built for practice as
-            well as being useful. For more examples click to see my{" "}
-          </span>
+        <div className="w-full px-12 md:px-0 md:w-3/4 ">
+          <p className="pb-2">
+            Above are 3 projects, the first is a demonstration of BrightHR Lite,
+            built to showcase the rota planner that I designed and built. The
+            others are both personal projects, built to practice my skills as
+            well as being useful.
+          </p>
+          <span>For more examples, click to see my </span>
           <a
             className="text-primaryColor"
             target="_blank"

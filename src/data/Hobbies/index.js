@@ -16,7 +16,7 @@ const hobbies = [
       />
     ),
     description:
-      "On top of week long trips around the Lakes, Yorkshire Dales and Scotland, I have spent 2 weeks cycling the width of France from Geneva to Bordeaux, cycled self supported from Auckland to Christchurch while in New Zealand and cycled over 600km around Corsica. ",
+      "A keen cyclist, I have enjoyed week long trips around the Lakes, Yorkshire Dales and Scotland. Also on self supported cycles trips, travelled the width of France from Geneva to Bordeaux,  Auckland to Christchurch in New Zealand and over 600km around Corsica. ",
   },
   {
     name: "Travel",
@@ -28,7 +28,7 @@ const hobbies = [
       />
     ),
     description:
-      "Before and during my time with STA I am lucky enough to have visited over 40 countries, I like to travel overland as much as possible preferably by bike, but have also spent 4 months in Australia as well as over 6 months exploring Asia.",
+      "I have visited over 40 countries and my interest in travel led to a career at STA. I like to travel overland as much as possible, preferably by bike. During a gap year, I was lucky to have spent 4 months in Australia and over 6 months exploring Asia.",
   },
   {
     name: "Food",
@@ -40,7 +40,7 @@ const hobbies = [
       />
     ),
     description:
-      "I am a keen home cook and baker, I have kept a sourdough starter alive for over 4 years and regularly use it for loaves and pizza, even pre lock down I could be found regularly trying out recipes inspired by my travels.",
+      "I am a keen home cook and baker, and I am proud to have kept a sourdough starter alive for over 4 years, regularly using it for loaves and pizza. Even pre-lockdown, I was frequently trying out recipes inspired by my travels.",
   },
 ];
 export default hobbies;
