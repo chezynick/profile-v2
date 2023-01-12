@@ -8,7 +8,7 @@ const projects = [
     alt: "BrightHR Lite image",
     title: "BrightHR Lite",
     description:
-      "Work project which showcases my work over the previous year at Bright",
+      "Work project which showcases my work over the previous year at Bright. Built in React, styled with tailwind and utilising Typescript for prop types. ",
   },
   {
     imgLink: foodieFileImage,

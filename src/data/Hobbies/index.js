@@ -40,7 +40,7 @@ const hobbies = [
       />
     ),
     description:
-      "I am a keen home cook and baker, and I am proud to have kept a sourdough starter alive for over 4 years, regularly using it for loaves and pizza. Even pre-lockdown, I was frequently trying out recipes inspired by my travels.",
+      "I am a keen home cook and baker, regularly makinhg sourdough loaves and pizzas. Even pre-lockdown, I was frequently trying out recipes inspired by my travels.",
   },
 ];
 export default hobbies;

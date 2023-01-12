@@ -22,10 +22,10 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
           <div className="flex justify-start "></div>
           <div className="space-y-1 text-left sm:space-y-6">
             <p>
-              Presently, I am Front End Developer at Bright HR, a company
+              Presently, I am a Front End Developer at Bright HR, a company
               providing cutting edge human resource software. Since beginning my
               journey with Bright in January 2021, I have been part of a small
-              team working on a number of exciting projects focusing on
+              team working on a number of exciting projects focused on
               enhancing the existing packages to stay ahead of the competition.
             </p>
 
@@ -34,7 +34,7 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
               coding. This required alot of self discipline and determination.
               Previously, I worked in sales and retail, the skills from this
               background have been transferable to my new role, as I am a
-              excellent communicator and a good team player.
+              excellent communicator and work well in a team.
             </p>
           </div>
         </div>
