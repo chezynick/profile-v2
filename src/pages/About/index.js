@@ -25,8 +25,8 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
               Presently, I am a Front End Developer at Bright HR, a company
               providing cutting edge human resource software. Since beginning my
               journey with Bright in January 2021, I have been part of a small
-              team working on a number of exciting projects focused on
-              enhancing the existing packages to stay ahead of the competition.
+              team working on a number of exciting projects focused on enhancing
+              the existing packages to stay ahead of the competition.
             </p>
 
             <p>

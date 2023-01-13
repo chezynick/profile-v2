@@ -44,8 +44,8 @@ const Work = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
           <p className="pb-2">
             Above are 3 projects, the first is a demonstration of BrightHR Lite,
             built to showcase the rota planner that I designed and built. The
-            others are both personal projects, constructed to practice my skills as
-            well as being useful to me personally.
+            others are both personal projects, constructed to practice my skills
+            as well as being useful to me personally.
           </p>
           <span>For more examples, click to see my </span>
           <a

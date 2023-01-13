@@ -20,7 +20,8 @@ const Personal = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
           also begun to use Typescript in a number of recent projects for work.
         </p>
         <p>
-          Outside of work I am active and am always on the go, below are a few of my main interests:
+          Outside of work I am active and am always on the go, below are a few
+          of my main interests:
         </p>
       </div>
       <div className="grid w-full grid-cols-1 gap-6 px-12 mb-10 md:px-0 md:w-3/4 md:grid-cols-3 sm:grid-cols-2 md:flex-row">
