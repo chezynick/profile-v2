@@ -7,6 +7,7 @@ const LinkButton = ({ text, href }) => {
       href={href}
       target="_blank"
       rel="noreferrer"
+      aria-label={`Link to ${text}`}
     >
       {text}
     </a>

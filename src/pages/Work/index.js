@@ -22,6 +22,7 @@ const Work = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
             <img
               src={project.imgLink}
               alt={project.alt}
+              aria-label={project.alt}
               className={cn(
                 "object-cover w-full h-full overflow-hidden flex-shrink-none",
                 {
