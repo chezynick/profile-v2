@@ -16,13 +16,19 @@ const Contact = ({ forwardRef, midRef, scrollToComponent, topRef }) => {
     >
       <PageHeader text="Contact" light />
       <div className="flex justify-center w-full h-auto space-x-6 ">
-        <a target="_blank" href="https://github.com/chezynick" rel="noreferrer">
+        <a
+          target="_blank"
+          href="https://github.com/chezynick"
+          rel="noreferrer"
+          aria-label="Link to my git hub page"
+        >
           <FontAwesomeIcon size="3x" icon={faGithub} className=" fill-white" />
         </a>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/nick-chesterton-3b7818223/"
           rel="noreferrer"
+          aria-label="Link to my linked in page"
         >
           <FontAwesomeIcon
             size="3x"
@@ -34,6 +40,7 @@ const Contact = ({ forwardRef, midRef, scrollToComponent, topRef }) => {
           target="_blank"
           href="https://www.instagram.com/chezynickannie/?hl=en"
           rel="noreferrer"
+          aria-label="Link to my Instagram in page"
         >
           <FontAwesomeIcon
             size="3x"
