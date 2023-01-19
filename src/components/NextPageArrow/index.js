@@ -19,6 +19,7 @@ const NextPageArrow = ({ scrollToComponent, nextRef }) => {
       onClick={() => {
         scrollToComponent(nextRef);
       }}
+      aria-label="Move to next page"
       className="absolute hidden lg:flex bottom-10 left-1/2"
     >
       <FontAwesomeIcon
