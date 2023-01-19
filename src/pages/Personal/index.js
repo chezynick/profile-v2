@@ -11,7 +11,7 @@ const Personal = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
     >
       <PageHeader text="Looking forward & outside work" />
       <div ref={midRef} className="absolute right-2 top-1/2" />
-      <div className="w-full px-12 mt-20 mb-6 space-y-4 md:w-3/4 md:px-0 md:mt-0">
+      <div className="w-full px-12 mt-20 mb-6 space-y-4 md:w-3/4 md:px-0 xl:mt-0">
         <p>
           I am eager to progress in my new career and am continuously looking at
           new ways to learn, improve and build on the knowledge I have acquired.

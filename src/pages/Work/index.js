@@ -50,7 +50,7 @@ const Work = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
           </p>
           <span>For more examples, click to see my </span>
           <a
-            className="text-primaryColor"
+            className="text-pink-700"
             target="_blank"
             href="https://github.com/chezynick"
             rel="noreferrer"
