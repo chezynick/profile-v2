@@ -1,7 +1,13 @@
 import React from "react";
 import cn from "classnames";
 
-const Button = ({ onClick, text, alternate = false, brand = false }) => {
+const Button = ({
+  onClick,
+  text,
+  alternate = false,
+  brand = false,
+  addBG = false,
+}) => {
   return (
     <button
       className={cn(
@@ -9,6 +15,7 @@ const Button = ({ onClick, text, alternate = false, brand = false }) => {
         {
           "bg-white border-gray-700": alternate,
           "border-primaryColor text-gray-700": brand,
+          "bg-gray-800": addBG,
         }
       )}
       onClick={onClick}

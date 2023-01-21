@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../../components/Button";
+import BIRDS from "vanta/dist/vanta.birds.min";
 
 const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
+  const [vantaEffect, setVantaEffect] = useState(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        BIRDS({
+          el: forwardRef.current,
+          backgroundColor: 0x1f2937,
+          color1: 0xfb3dfb,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          birdSize: 1.2,
+          quantity: 2.8,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
     <div
       ref={forwardRef}
@@ -15,6 +41,7 @@ const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
         onClick={() => {
           scrollToComponent(aboutRef);
         }}
+        addBG
         text="About me..."
       />
       <div ref={midRef} className="absolute right-2 top-1/2" />
