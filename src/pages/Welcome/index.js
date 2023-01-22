@@ -11,7 +11,6 @@ const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
           el: forwardRef.current,
           backgroundColor: 0x1f2937,
           color1: 0xfb3dfb,
-          color2: 0xf3f4f6,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
