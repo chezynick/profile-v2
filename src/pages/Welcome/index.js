@@ -11,6 +11,7 @@ const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
           el: forwardRef.current,
           backgroundColor: 0x1f2937,
           color1: 0xfb3dfb,
+          color2: 0xfbafff,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
@@ -18,8 +19,9 @@ const Welcome = ({ scrollToComponent, forwardRef, aboutRef, midRef }) => {
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
+          wingSpan: 20,
           birdSize: 1.2,
-          quantity: 2.2,
+          quantity: 2.7,
         })
       );
     }
