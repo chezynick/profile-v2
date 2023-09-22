@@ -13,11 +13,11 @@ const Personal = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
       <div ref={midRef} className="absolute right-2 top-1/2" />
       <div className="w-full px-12 mt-20 mb-6 space-y-4 md:w-3/4 md:px-0 xl:mt-0">
         <p>
-          I am eager to progress in my new career and am continuously looking at
-          new ways to learn, improve and build on the knowledge I have acquired.
-          Currently, I am teaching myself Flutter as a way of learning new
-          skills and experiencing a different coding language in Dart. I have
-          also begun to use Typescript in a number of recent projects for work.
+          I am deeply committed to advancing in my career and consistently seek
+          out opportunities to enhance my skills and knowledge. At present, I am
+          self-teaching Flutter to broaden my expertise and acquaint myself with
+          the Dart programming language. Additionally, I have incorporated
+          TypeScript into several recent projects for work
         </p>
         <p>
           Outside of work I am active and am always on the go, below are a few

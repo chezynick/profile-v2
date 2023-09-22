@@ -12,7 +12,6 @@ const Work = ({ forwardRef, midRef, nextRef, scrollToComponent }) => {
       className="relative flex flex-col items-center justify-center w-full min-h-screen py-8 text-gray-700 bg-gray-100"
     >
       <PageHeader text="Projects" />
-
       <div className="grid w-full grid-cols-1 gap-4 px-12 mt-10 mb-8 md:w-3/4 md:px-0 xl:mt-0 md:gap-8 md:grid-cols-3 sm:grid-cols-2 ">
         {projects.map((project) => (
           <div

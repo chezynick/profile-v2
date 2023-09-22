@@ -22,19 +22,20 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
           <div className="flex justify-start "></div>
           <div className="space-y-1 text-left sm:space-y-6">
             <p>
-              Presently, I am a Front End Developer at Bright HR, a company
-              providing cutting edge human resource software. Since beginning my
-              journey with Bright in January 2021, I have been part of a small
-              team working on a number of exciting projects focused on enhancing
-              the existing packages to stay ahead of the competition.
+              Currently, I serve as a Front End Developer at Bright HR, a
+              leading provider of innovative human resource software. Since
+              joining Bright in January 2021, I&apos;ve collaborated with a
+              dedicated team on several projects, aiming to elevate our software
+              offerings and maintain our competitive edge.
             </p>
 
             <p>
-              During lockdown I used the Odin project, an online course to learn
-              coding. This required alot of self discipline and determination.
-              Previously, I worked in sales and retail, the skills from this
-              background have been transferable to my new role, as I am a
-              excellent communicator and work well in a team.
+              During the lockdown, I engaged with The Odin Project, an online
+              coding course, showcasing my self-discipline and determination. My
+              background in sales and retail has transitioned smoothly into my
+              current role. The skills I honed in those fields, especially my
+              strong communication abilities, enable me to excel in team
+              settings.
             </p>
           </div>
         </div>
@@ -53,16 +54,11 @@ const About = ({ forwardRef, midRef, scrollToComponent, nextRef }) => {
              option, this has now superseded the original."
             />
             <ListItem
-              text="A new additional view for the existing rota planning software which I conceived and built as prototype,
-               was after demoing to stakeholders, allotted time to be be fully developed.
-                It is now the primary view used by over 70% of customers and is the sole
-                 focus of future development.
+              text="I conceived and prototyped a new view for our existing rota planning software.
+               After demonstrating it to stakeholders, it was greenlit for full development. Today, it's the preferred view for over 75% of our customers and has become the central focus of our future development efforts.
 "
             />
-            <ListItem
-              text="BrightHR Lite is a free to use rota planner, it is built
-             to showcase the rota planner above and uses the navigation system I was also involved in."
-            />
+            <ListItem text="Thanks to the new rota planning software above, we were able to introduce BrightHR Lite, a complimentary rota planner. This tool not only highlights the capabilities of our main rota planner but also incorporates the new navigation." />
           </ul>
         </div>
       </div>
